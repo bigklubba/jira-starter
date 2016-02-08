@@ -8,7 +8,8 @@ WEBBROWSER = 'firefox'
 JIRA_PATH = 'merlin.hrm.local/jira/browse/UTV-'
 
 def main():
-  url_path = 'http://merlin/jira/secure/Dashboard.jspa'
+  url_path = 'http://merlin.hrm.local/jira/secure/IssueNavigator.jspa?mode=hide&requestId=15370'
+  # url_path = 'http://merlin/jira/secure/Dashboard.jspa'
   if len(sys.argv) > 1:
     url_path = JIRA_PATH + sys.argv[1]
 
