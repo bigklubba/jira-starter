@@ -12,7 +12,6 @@ def main():
     url_path = 'http://jira.ist.com/secure/Dashboard.jspa'
     if len(sys.argv) > 1:
         url_path = JIRA_PATH + sys.argv[1]
-        print(url_path)
 
     webbrowser.get(WEBBROWSER).open_new_tab(url_path)
 
