@@ -1,17 +1,19 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-__author__ = 'piem7783'
+
 import sys
 import webbrowser
 
 WEBBROWSER = 'firefox'
-JIRA_PATH = 'merlin.hrm.local/jira/browse/UTV-'
+JIRA_PATH = 'jira.ist.com/browse/'
+
 
 def main():
-  url_path = 'http://merlin.hrm.local/jira/secure/IssueNavigator.jspa?mode=hide&requestId=15370'
-  # url_path = 'http://merlin/jira/secure/Dashboard.jspa'
-  if len(sys.argv) > 1:
-    url_path = JIRA_PATH + sys.argv[1]
+    url_path = 'http://jira.ist.com/secure/Dashboard.jspa'
+    if len(sys.argv) > 1:
+        url_path = JIRA_PATH + sys.argv[1]
+        print(url_path)
 
-  webbrowser.get(WEBBROWSER).open_new_tab(url_path)
+    webbrowser.get(WEBBROWSER).open_new_tab(url_path)
+
 main()
